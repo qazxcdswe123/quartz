@@ -50,10 +50,8 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options> | und
                 created ||= st.birthtimeMs
                 modified ||= st.mtimeMs
               } else if (source === "frontmatter" && file.data.frontmatter) {
-                created ||= file.data.frontmatter.date
-                modified ||= file.data.frontmatter.lastmod
-                modified ||= file.data.frontmatter.updated
-                modified ||= file.data.frontmatter["last-modified"]
+                created ||= file.data.frontmatter["creationDate"]
+                modified ||= file.data.frontmatter["annotationDate"]
                 published ||= file.data.frontmatter.publishDate
               } else if (source === "git") {
                 if (!repo) {
