@@ -7,6 +7,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
+    locale: "en-US",
     baseUrl: "blog.ynchen.me",
     ignorePatterns: ["Ignore", "textgenerator", ".obsidian"],
     defaultDateType: "modified",
