@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "blog.ynchen.me",
-    ignorePatterns: ["Ignore", "Secret", ".obsidian"],
+    ignorePatterns: ["Ignore", "Secret", ".obsidian", "LLM-Wiki"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
